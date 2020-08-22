@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MediaPlayer</string>
+    <string name="btnPlay">play</string>
+    <string name="song">Cello</string>
+    <string name="btnPause">pause</string>
+    <string name="btnStop">stop</string>
+</resources>
