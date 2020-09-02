@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="12dp"
+                android:text="first number:"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSecond"
+                app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/textSecond" />
+
+            <EditText
+                android:id="@+id/editTextN1"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="number 1"
+                android:inputType="number"
+                app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2" />
+
+        </TableRow>
+        <TableRow android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/textSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="56dp"
+                android:text="second number:"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toTopOf="@+id/buttonAdd"
+                app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2" />
+
+            <EditText
+                android:id="@+id/editTextN2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="52dp"
+                android:ems="10"
+                android:hint="number 2"
+                android:inputType="number"
+                app:layout_constraintBottom_toTopOf="@+id/buttonSub"
+                tools:layout_editor_absoluteX="194dp" />
+        </TableRow>
+
+
+    <TableRow >
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginBottom="100dp"
+            android:text="add"
+            android:onClick="handleAdd"
+            app:layout_constraintBottom_toTopOf="@+id/textResult"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/buttonSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
+            android:layout_marginBottom="100dp"
+            android:text="sub"
+            android:onClick="handleSub"
+            app:layout_constraintBottom_toTopOf="@+id/textResult"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginBottom="132dp"
+        android:hint="result"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="addition and substraction"
+        android:textFontWeight="@android:integer/config_mediumAnimTime"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="33dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
