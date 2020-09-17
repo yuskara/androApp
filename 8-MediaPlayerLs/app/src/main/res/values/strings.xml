@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MediaPlayer</string>
+<!--    <string name="list_item">play list</string>-->
+    <string name="btnPlay">play</string>
+    <string name="btnPause">pause</string>
+    <string name="btnStop">stop</string>
+
+    <string name="song">Color of Love</string>
+
+    <string name="dropdown">Select</string>
+    <string-array name="songList">
+        <item>love</item>
+        <item>mendilim</item>
+        <item>ring</item>
+    </string-array>
+</resources>
