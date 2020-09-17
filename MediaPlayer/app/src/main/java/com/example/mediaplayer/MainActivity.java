@@ -16,17 +16,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mediaPlayer=MediaPlayer.create(context,R.raw.cello);
+        mediaPlayer=MediaPlayer.create(context,R.raw.love);
 
     }
-    public void handlePlay(View view){
-        mediaPlayer.start();
-    }
-
+    public void setMediaPlayer(){mediaPlayer=MediaPlayer.create(context,R.raw.love);}
+    public void handlePlay(View view){mediaPlayer.start();  }
     public void handlePause(View view) {
         mediaPlayer.pause();
     }
     public void handleStop(View view) {
         mediaPlayer.stop();
+        setMediaPlayer();
     }
 }
